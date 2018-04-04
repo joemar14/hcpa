@@ -1,0 +1,737 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honda Cars Pangasinan Inc.</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- css/js -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/mycustom-bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<script src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/script.js"></script> 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified CSS
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+-->
+<!-- Optional theme
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+-->
+<!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+-->
+</head>
+<body>
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+	<script>
+		// ===== Scroll to Top ==== 
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+				$('#return-to-top').fadeIn(200);    // Fade in the arrow
+			} else {
+				$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+			}
+		});
+		$('#return-to-top').click(function() {      // When arrow is clicked
+			$('body,html').animate ({ 
+				scrollTop : 0                       // Scroll to top of body
+			}, 500);
+		});
+	
+	
+	</script>
+<!-- header -->
+<header class="container">
+	<div class="row">
+		<div class="col-md-10" style="background-color: #1A1A1A; height: 30px;">
+			<p><strong>Honda Cars</strong> <a href="#">Pangasinan</a> | <a href="#">Baguio</a> | <a href="#">Launion</a> | <a href="#">Ilocos Norte</a></p>
+		</div>
+		<div class="col-md-2 text-right" style="background-color: #6E6E6E; height: 30px; padding-bottom: 2px;margin-right: ">
+			<ul>
+				<li style="display: inline-block;"><p style="font-size: 15px;margin: auto;color: #FFF">Follow Us:</p></li>
+				<li style="display: inline-block;"><a href="https://www.facebook.com/hondapangasinan" target="_blank"><img atl="facebook" src="img/fb.png"/></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<!-- main navigation -->
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="100">
+  <div class="container">
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 25px;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      	<div class="logo">
+      		<a class="navbar-brand" href="index.html"><img src="img/NEW HONDA LOGO.png" width="220px"/></a>
+		</div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+		  <li><a href="index.html" >Home</a></li>
+        <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Model Lineup</a>
+        	<ul class="dropdown-menu">
+				<li class="active"><a href="#">City</a></li>
+        		<li><a href="civic.html">Civic</a></li>
+        		<li><a href="jazz.html">Jazz</a></li>
+        		<li><a href="brio.html">Brio</a></li>
+        		<li><a href="brioamaze.html">Brio Amaze</a></li>
+        		<li><a href="accord.html">Accord</a></li>
+        		<li><a href="legend.html">Legend</a></li>
+        		<li><a href="crv.html">CR-V</a></li>
+        		<li><a href="hrv.html">HR-V</a></li>
+        		<li><a href="brv.html">BR-V</a></li>
+        		<li><a href="mobilio.html">Mobilio</a></li>
+        		<li><a href="odessy.html">Oddesy</a></li>
+        		<li><a href="pilot.html">Pilot</a></li>
+        	</ul>
+        </li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">PM Packages</a></li>
+        		<li><a href="#">Service Appointment</a></li>
+        		<li><a href="#">Service History Request</a></li>
+        		<li><a href="#">Service Status</a></li>
+        		<li><a href="#">Detailing</a></li>
+        		<li><a href="#">Servicing Guidelines</a></li>
+        		<li><a href="#">Elite Card</a></li>
+        		<li><a href="#">Towing</a></li>
+        	</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Parts</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Parts Inquiry</a></li>
+        		<li><a href="#">Promo/Sales</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Insurance</a></li>
+		<li><a href="#">Facilities</a></li>
+		<li><a href="contacts.html">Contacts</a></li>
+		<li><a href="#">About Us</a></li>
+		</ul>
+   		<button class="btn btn-danger navbar-btn navbar-right" onclick="document.getElementById('inquiry').style.display='block'">Inquire Now!</button>
+   		
+   			<div id="inquiry" class="w3-modal">
+						<div class="w3-modal-content w3-animate-top w3-card-8">
+						  <header class="w3-container w3-dark-grey"> 
+							<span onclick="document.getElementById('inquiry').style.display='none'" class="w3-closebtn">&times;</span>
+							<h2>Make Inquiry</h2>
+						  </header>
+						  <div class="w3-container">
+						 
+							  <!-- Do not change the code! -->
+					<a id="foxyform_embed_link_841096" href="http://www.foxyform.com/">foxyform</a>
+					<script type="text/javascript">
+					(function(d, t){
+					   var g = d.createElement(t),
+						   s = d.getElementsByTagName(t)[0];
+					   g.src = "http://www.foxyform.com/js.php?id=841096&sec_hash=441264dc6d2&width=350px";
+					   s.parentNode.insertBefore(g, s);
+					}(document, "script"));
+					</script>
+					<!-- Do not change the code! -->
+											  </div>
+											  <footer class="w3-container w3-dark-grey">
+												<p>Thank You!</p>
+											  </footer>
+											</div>
+				</div> <!-- Inquire Modal end -->
+    </div>
+  </div>
+</nav>
+
+<!--unit header-->
+
+<div class="container text-center">
+	<img src="img/City/city-2016-17-logo.png" class="img-responsive"/>
+</div>
+
+<div class="space"></div>
+
+<!-- unit preview -->
+<div class="container">
+<div class="w3-content col-sm-7" style="background-image: url(showroom.jpg);background-size: cover;">
+	
+	<div class="banner-container colorunit">
+	  <img src="img/City/color/red.png" style="width:100%;"> 	
+	</div>
+	
+	<div class="banner-container colorunit">
+	  <img src="img/City/color/gold.png" style="width:100%;"> 	
+	</div>
+	
+	<div class="banner-container colorunit">
+	  <img src="img/City/color/msm.png" style="width:100%;"> 	
+	</div>
+	
+	<div class="banner-container colorunit">
+	  <img src="img/City/color/white.png" style="width:100%;"> 	
+	</div>
+	
+	<div class="banner-container colorunit">
+	  <img src="img/City/color/black.png" style="width:100%;"> 	
+	</div>
+	
+</div>
+	<div class="col-sm-5 text-left">
+		<p style="font-style: italic">Price Starts At:</p>
+		<h3 style="font-style: italic; color: red;">PHP 764,000.00</h3>
+		<h6 style="font-family: Exo">AVAILABLE COLORS:</h6>
+		<div class="colors">
+			<button class="unitcolor" onclick="currentDiv(1)"><img src="img/City/colors/red.png" width="65px" class="img-responsive" alt="city" data-toggle="tooltip" data-placement="bottom" title="Red Ruby Pearl" /></button>
+			<button class="unitcolor" onclick="currentDiv(2)"><img src="img/City/colors/gold.png" width="65px" class="img-responsive" alt="city" data-toggle="tooltip" data-placement="bottom" title="Gold Brown Mettalic"/></button>
+			<button class="unitcolor" onclick="currentDiv(3)"><img src="img/City/colors/msm.png" width="65px" class="img-responsive" alt="city" data-toggle="tooltip" data-placement="bottom" title="Modern Steel Mettalic"/></button>
+			<button class="unitcolor" onclick="currentDiv(4)"><img src="img/City/colors/white.png" width="65px" class="img-responsive" alt="city" data-toggle="tooltip" data-placement="bottom" title="Taffeta White"/></button>
+			<button class="unitcolor" onclick="currentDiv(5)"><img src="img/City/colors/black.png" width="65px" class="img-responsive" alt="city" data-toggle="tooltip" data-placement="bottom" title="Crystal Black Pearl"/></button>
+		</div>
+		<h6 style="font-family: Exo">VARIANTS:</h6>
+		<div class="variants">
+			<div class="variant">1.5 E MT</div>
+			<div class="variant">1.5 E CVT</div>
+			<div class="variant">1.5 VX Navi CVT</div>
+			<div class="variant">1.5 VX+ Navi CVT</div>
+			<div class="variant">1.5 E CVT Limited Edition</div>
+			<div class="variant">1.5 E CVT Modulo Utility</div>
+			<div class="variant">1.5 VX Navi CVT Modulo Aero Sport</div>
+			<div class="variant">1.5 E CVT Modulo Black Edition</div>
+			<div class="variant">1.5 VX Navi CVT Modulo Black Edition</div>
+			<div class="variant">1.5 VX Navi CVT MUGEN</div>
+			<div class="variant">1.5 VX Navi CVT MUGEN Black Edition</div>
+		</div>
+	</div>
+			
+			<!-- change color script -->
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+				
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("colorunit");
+			  var dots = document.getElementsByClassName("unitcolor");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				 dots[i].className = dots[i].className.replace(" w3-blue", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+
+	
+
+</div>
+
+
+<div class="space"></div>
+
+<!-- unit features -->
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
+		<li ><a data-toggle="tab" href="#exterior">Exterior</a></li>
+		<li><a data-toggle="tab" href="#interior">Interior</a></li>
+		<li><a data-toggle="tab" href="#performance">Performance</a></li>
+		<li><a data-toggle="tab" href="#safety">Safety</a></li>
+		<li><a data-toggle="tab" href="#specs">Specifications</a></li>
+		<li><a data-toggle="tab" href="#gallery">Gallery</a></li>
+		<li><a data-toggle="tab" href="#priceguide">Price Guide</a></li>
+	</ul>
+	
+	<div class="tab-content">
+		
+	  <div class="space"></div>
+		
+		<div id="overview" class="tab-pane fade in active">
+			<div class="col-sm-6 unitdes">
+				<h1>The Future Is Here</h1>
+					<p>Advanced mobility is in your hands with The All-New Honda City. Designed in line with a vision that is ahead of its time, utilizing cutting-edge driving innovations and delivering outstanding comfort features.</p>
+			</div>
+			<div class="col-sm-6">
+				<div class="container" style="max-width: 600px; max-height: 400px;">
+				<iframe width="100%" height="300px;" src="https://www.youtube.com/embed/v10tzUNVClU" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div><!-- end of overview content -->
+		
+		<div id="exterior" class="tab-pane fade">
+			<div class="col-sm-6 unitdes">
+				<h1>Exterior</h1>
+					<p>Angular lines and sharp creases guarantee that The All-New Honda City glides through the air with utmost efficiency. The result is a head-turning shape with sophisticated styling and design; an announcement for all that you’ve arrived.</p>
+			</div>
+			<div class="col-sm-6 ">
+						
+					<div class="container" style="max-width: 600px; max-height: 400px;margin-top: -30px;margin-bottom: -50px;">
+					  <br>
+					  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators" style="bottom:-5px;">
+						  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						  <li data-target="#myCarousel" data-slide-to="1"></li>
+						  <li data-target="#myCarousel" data-slide-to="2"></li>
+						  <li data-target="#myCarousel" data-slide-to="3"></li>
+						  <li data-target="#myCarousel" data-slide-to="4"></li>
+						  <li data-target="#myCarousel" data-slide-to="5"></li>
+						  <li data-target="#myCarousel" data-slide-to="6"></li>
+						  <li data-target="#myCarousel" data-slide-to="7"></li>
+						  <li data-target="#myCarousel" data-slide-to="8"></li>
+						  <li data-target="#myCarousel" data-slide-to="9"></li>
+						  <li data-target="#myCarousel" data-slide-to="10"></li>
+						  <li data-target="#myCarousel" data-slide-to="11"></li>
+						  <li data-target="#myCarousel" data-slide-to="12"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox" style="margin-bottom:50px;">
+						  <div class="item active">
+						
+									<img src="img/City/exterior/" alt="Chania" width="100%">
+									<div class="carousel-caption">
+									  <h3>Front Grille</h3>
+									  	<p>The imposing polished chrome grille with the unmistakable badge of Honda.</p>
+									</div>
+						
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/exterior/headlight.jpg" alt="Chania" width="100%">
+							<div class="carousel-caption">
+							  <h3>Head Light</h3>
+							  <p>Safety is paramount, thanks to superior driver visibility provided by the new headlights. Angular lines and sharp creases guarantee.</p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/exterior/foglight.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Fog Light</h3>
+							  <p>Drive with confidence under any weather condition. (For VX+ and VX only). </p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/exterior/sidemirrorturnlights.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Side Mirror Turn Light</h3>
+							  <p>Polished five-spoke 16-inch alloys exude understated style. (For VX+ and VX only).</p>
+							</div>
+						  </div>
+						  
+						   <div class="item">
+							<img src="img/City/exterior/reardesign.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Rear Design</h3>
+							  <p>Boast off a stunning rear end, thanks to a sculpted rear bumper and classic chrome trunk garnish.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/taillights.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Tail Light</h3>
+							  <p>Attention-grabbing, wide multi-facet taillights ensure absolute safety even when surrounded by other vehicles.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/streamlinesides.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Streamline Sides</h3>
+							  <p>Fluid upward-creased character line emphasizes the elegance of The All-New Honda City.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/multiviewreversecamera.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Multi View Reverse Camera</h3>
+							  <p>Additional rear visibility is made possible with the multi-view reverse camera of The All-New Honda City, which features 3-view mode-normal, wide-angle, and top-down view. (For VX+ and VX only).</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/antenna.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Antenna</h3>
+							  <p>The antenna that resembles a shark’s fin adds an upmarket touch to what’s already a fashionable exterior. (Pole antenna for 1.5E M/T).</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/newalloywheels.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>New Ally Wheels</h3>
+							  <p>Polished five-spoke 16-inch alloys exude understated style. (For VX+ and VX only).</p>
+							</div>
+						  </div>
+						 
+						  <div class="item">
+							<img src="img/City/exterior/15inchalloywheels.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>15 Inch Alloy Wheels</h3>
+							  <p>For 1.5 E CVT only.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/15inchwheelwithwheelcover.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>15 Inch Wheel With Wheel Cover</h3>
+							  <p>For 1.5 E MT only.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/exterior/smartkey.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Smart Key</h3>
+							  <p>Keyless entry uses a proximity sensor for unrivalled and secure access to The All-New Honda City (For VX+ and VX only).Keyless entry uses a proximity sensor for unrivalled and secure access to The All-New Honda City (For VX+ and VX only).</p>
+							</div>
+						  </div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="margin-left: -20px;">
+						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="margin-right: -20px;">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
+					</div>
+			</div>
+					
+		</div><!-- end of exterioir content -->
+		
+		<div id="interior" class="tab-pane fade">
+			<div class="col-sm-6 unitdes">
+				<h1>Interior</h1>
+					<p>Whether as a driver or passenger, The All-New Honda City will keep you comfortable no matter where you go. You can also experience the power of a single touch with The All-New Honda City touch-screen multi-information panel. Every detail is made with the finest quality, keeping it on top of its class.</p>
+			</div>
+			<div class="col-sm-6 ">
+						
+					<div class="container" style="max-width: 600px; max-height: 400px;margin-top: -30px;margin-bottom: -50px;">
+					  <br>
+					  <div id="myInterior" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators" style="bottom:-5px;">
+						  <li data-target="#myInterior" data-slide-to="0" class="active"></li>
+						  <li data-target="#myInterior" data-slide-to="1"></li>
+						  <li data-target="#myInterior" data-slide-to="2"></li>
+						  <li data-target="#myInterior" data-slide-to="3"></li>
+						  <li data-target="#myInterior" data-slide-to="4"></li>
+						  <li data-target="#myInterior" data-slide-to="5"></li>
+						  <li data-target="#myInterior" data-slide-to="6"></li>
+						  <li data-target="#myInterior" data-slide-to="7"></li>
+						  <li data-target="#myInterior" data-slide-to="8"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox" style="margin-bottom:50px;">
+						  <div class="item active">
+							<img src="img/City/interior/interior.jpg" alt="Chania" width="100%">
+							<div class="carousel-caption">
+							  <h3></h3>
+							  <p></p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/interior/pushbuttonignition.jpg" alt="Chania" width="100%">
+							<div class="carousel-caption">
+							  <h3>Push Button Ignition</h3>
+							  <p>Start your engine with a single push of a button. (For VX+ and VX only)</p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/interior/eco-coachingambientmeter.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Eco-Coaching Ambient Meter</h3>
+							  <p>Be guided by the Econ Ambient Light Meter to get the best mileage. The green color indicates efficient fuel consumption.</p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/interior/amber-litinstrumentcluster.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Amber-lit Instrument Cluster</h3>
+							  <p>For 1.5 E CVT / MT.</p>
+							</div>
+						  </div>
+						  
+						   <div class="item">
+							<img src="img/City/interior/continuouslyvariabletransmission.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Continuously Variable Transmission</h3>
+							  <p>It allows seamless shifting, gives rapid response, and delivers outstanding fuel economy.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/interior/touchpanelautoaircon.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Touch Panel Auto Aircon</h3>
+							  <p>One effortless push activates the automatic air-conditioning system. (For VX+ and VX only)</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/interior/econmodebutton.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Econ Mode Button</h3>
+							  <p>Using the button activates the econ mode which adjusts vital systems that affect fuel economy, such as throttle, shift mapping, and air-conditioning.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/interior/cableandpowerports.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Cable And Power Ports</h3>
+							  <p>Cable and power ports make connectivity and charging easier than ever with The All-New Honda City. Power ports are also conveniently accessed even at the back seat.</p>
+							</div>
+						  </div>
+						  
+						  <div class="item">
+							<img src="img/City/interior/audiovisual.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Audio-Visual Navigation (AVN) System with in-dash DVD/CD</h3>
+							  <p>The AVN System appears as a seven-inch wide VGA sliding touch panel, furnished with built-in&nbsp;Garmin navigation. (For 1.5 E NAVI+ CVT / MT only)</p>
+							</div>
+						  </div>
+						  
+						  
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myInterior" role="button" data-slide="prev" style="margin-left: -20px;">
+						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myInterior" role="button" data-slide="next" style="margin-right: -20px;">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
+					</div>
+			</div>
+					
+		</div><!-- end of interior content -->
+		
+		<div id="performance" class="tab-pane fade">
+			<div class="col-sm-6 unitdes">
+				<h1>Performance</h1>
+					<p>The 1.5-liter i-Vtec of The All-New Honda City can make short work of any urban challenge. Variable valve timing and lift electronic control technology optimizes engine response based on the driver’s instantaneous demands, thus providing spirited dynamics while maintaining fuel economy.</p>
+			</div>
+			<div class="col-sm-6">
+			
+				<img src="img/City/performance/engine.jpg" width="100%" />
+				
+			</div>
+		</div><!-- end of performance content -->
+		
+		<div id="safety" class="tab-pane fade">
+			<div class="col-sm-6 unitdes">
+				<h1>Safety</h1>
+					<p>For added peace of mind, The All-New Honda City makes no compromises when it comes to passengers’ safety. Traveling with your loved ones has never been this secure even during spirited drives.
+
+</p>
+			</div>
+			<div class="col-sm-6 ">
+						
+					<div class="container" style="max-width: 600px; max-height: 400px;margin-top: -30px;margin-bottom: -50px;">
+					  <br>
+					  <div id="mySafety" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators" style="bottom:-5px;">
+						  <li data-target="#mySafety" data-slide-to="0" class="active"></li>
+						  <li data-target="#mySafety" data-slide-to="1"></li>
+						  <li data-target="#mySafety" data-slide-to="2"></li>
+						  <li data-target="#mySafety" data-slide-to="3"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox" style="margin-bottom:50px;">
+						  <div class="item active">
+							<img src="img/City/safety/airbags.jpg" alt="Chania" width="100%">
+							<div class="carousel-caption">
+							  <h3>Airbags</h3>
+							  <p>For added peace of mind, The All-New Honda City makes no compromises when it comes to passengers’ safety.</p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/safety/g-conbodystructure.jpg" alt="Chania" width="100%">
+							<div class="carousel-caption">
+							  <h3>G-Con Body Structure</h3>
+							  <p>G-Con body construction absorbs the force of impact during collisions. The extensive crash testing and research of Honda has resulted in a body shell that is crash–compatible with other vehicles.</p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/safety/hillstartassist.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Hill Starts Assist</h3>
+							  <p>Hill Start Assist (HSA) gives you additional confidence on inclined roads knowing you have more time shifting your foot from the brake to the gas pedal. (For VX+ only).</p>
+							</div>
+						  </div>
+
+						  <div class="item">
+							<img src="img/City/safety/vehicleatabilityassist.jpg" alt="Flower" width="100%">
+							<div class="carousel-caption">
+							  <h3>Vehicle Stability Assist</h3>
+							  <p>Vehicle Stability Assist (VSA) will help keep drivers in control by eliminating understeer and oversteer in the event of traction loss.(For VX+ only).</p>
+							</div>
+						  </div>
+						  
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#mySafety" role="button" data-slide="prev" style="margin-left: -20px;">
+						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#mySafety" role="button" data-slide="next" style="margin-right: -20px;">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
+					</div>
+			</div>
+					
+		</div><!-- end of safety content -->
+		
+		<div id="specs" class="tab-pane fade">
+			<div class="col-sm-2">
+				<p><b>Legend:</b><br/>
+				• Standard<br/>
+				- Not Available<br/>
+				</p>
+				<a href="#dimensionandweight">Dimension And Weight</a><br/>
+				<a href="#engine">Engine</a><br/>
+				<a href="#ecoassistsystem">Eco Assist System</a><br/>
+				<a href="#suspension">Suspension</a><br/>
+				<a href="#brake">Brake</a><br/>
+				<a href="#steering">Steering</a><br/>
+				<a href="#interior1">Interior</a><br/>
+				<a href="#exterior1">Exterior</a><br/>
+				<a href="#safetyandsecurity">Safety And Security</a>
+			</div>
+			<div class="col-sm-10 specs-content">
+				<img id="dimensionandweight" src="img/City/specs/dimensionandweight.jpg" width="100%" />
+				<img id="engine" src="img/City/specs/engine.jpg" width="100%" />
+				<img id="ecoassistsystem" src="img/City/specs/ecoassistsystem.jpg" width="100%" />
+				<img id="suspension" src="img/City/specs/suspension.jpg" width="100%" />
+				<img id="brake" src="img/City/specs/brake.jpg" width="100%" />
+				<img id="steering" src="img/City/specs/steering.jpg" width="100%" />
+				<img id="interior1" src="img/City/specs/interior.jpg" width="100%" />
+				<img id="exterior1" src="img/City/specs/exterior.jpg" width="100%" />
+				<img id="safetyandsecurity" src="img/City/specs/safetyandsecurity.jpg" width="100%" />
+			</div>
+		</div><!-- end of specs content -->
+		
+		<div id="gallery" class="tab-pane fade">
+			<div class="container">
+
+				<div class="row">
+						
+
+								<img class="gallery-img" src="img/City/gallery/1.jpg" style="width: 20%" onclick="document.getElementById('gallery1').style.display='block'"/>					
+									<div id="gallery1" class="w3-modal">
+									  <!-- Modal content -->
+									  <div class="w3-modal-content w3-animate-top w3-card-8">
+										<div class="modal-body">
+											<span class="prmclose1" onclick="document.getElementById('gallery1').style.display='none'">×</span>
+										  <img src="img/City/gallery/1.jpg" width="100%"/>
+										</div>
+									  </div>
+
+									</div>
+						
+								<img class="gallery-img" src="img/City/gallery/2.jpg" style="width: 20%" onclick="document.getElementById('gallery2').style.display='block'"/>
+									<div id="gallery2" class="w3-modal">
+									  <!-- Modal content -->
+									  <div class="modal-content">
+										<div class="modal-body">
+											<span class="prmclose2" onclick="document.getElementById('gallery2').style.display='none'">×</span>
+										  <img src="img/City/gallery/2.jpg" width="100%"/>
+										</div>
+									  </div>
+									</div>
+						
+
+												<script>
+												var modal1 = document.getElementById('gallery1');
+												var modal2 = document.getElementById('gallery2');
+
+												window.onclick = function(event) { 		
+													if (event.target == modal1) {
+
+														modal1.style.display = "none";
+													}
+													else if (event.target == modal2) {
+
+														modal2.style.display = "none";
+													}
+
+												};	
+												</script>
+
+
+				</div>
+			</div>
+	
+		</div><!-- end of gallery content -->
+
+		<div id="priceguide" class="tab-pane fade">
+			<img src="img/City/priceguide.png" width="100%" />
+		</div><!-- end of overview content -->
+
+		</div>
+	</div><!-- end of tab content -->
+	
+
+<div class="space"></div>
+<!-- footer -->
+<div class="container">
+<div class="row">
+
+	<div class="col-sm-6 text-left footer">
+		<a href="#">Abouts</a> | 
+		<a href="#">News and Events</a> | 
+		<a href="#">Affiliates</a> | 
+		<a href="#">Customer Welfare Desk</a> |
+		<a href="#">Testimonials</a> |
+		<a href="#">Job Opportunities</a> | 
+		<a href="#">Location Map</a>
+	</div>
+	<div class="col-sm-6 text-right">
+	<p style="font-size: 10px;font-style: italic;">Powered By: <img src="img/NEW HONDA LOGO.png" width="20%"/></p>
+	<p style="font-size: 11px;font-style: italic;">Copyright © 2016. Honda Cars Pangasinan Inc. (HCPA). All Rights Reserved.</p>
+	</div>
+
+	</div></div>
+</body>
+</html>

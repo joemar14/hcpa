@@ -1,0 +1,84 @@
+<?php 
+
+// define variables and set to empty values
+$name_error = $email_error = $phone_error = $department_error = $message_error = "";
+$name = $email = $phone = $department = $message = $success = "";
+
+//form is submitted with POST method
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["Name"])) {
+    $name_error = "Name is required";
+  } else {
+    $name = test_input($_POST["Name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $name_error = "Only letters and white space allowed"; 
+    }
+  }
+
+if (empty($_POST["Phone"])) {
+    $phone_error = "Phone is required";
+  } else {
+    $phone = test_input($_POST["Phone"]);
+    // check if e-mail address is well-formed
+    if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$phone)) {
+      $phone_error = "Invalid phone number"; 
+    }
+  }
+	
+  if (empty($_POST["Email"])) {
+    $email_error = "Email is required";
+  } else {
+    $email = test_input($_POST["Email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $email_error = "Invalid email format"; 
+    }
+  }
+  
+	if (empty($_POST["Department"])) {
+    $department_error = "Department is required";
+  } else {
+    $department = test_input($_POST["Department"]);
+  }
+	
+
+  if (empty($_POST["Message"])) {
+    $message_error = "Message is required";
+  } else {
+    $message = test_input($_POST["Message"]);
+  }
+  
+  if ($name_error == '' and $email_error == '' and $phone_error == '' and $department_error == ''){
+      $message_body = '';
+      unset($_POST['submit']);
+      foreach ($_POST as $key => $value){
+          $message_body .=  "$key: $value\n";
+      }
+      
+	  if($department == 'Sales'){
+      $to = 'mkking@hondapang.com.ph, jmcasilang@hondapang.com.ph';
+	  }
+	  elseif($department == 'Service'){
+      $to = 'service@hondapang.com.ph, jmcasilang@hondapang.com.ph';
+	  }
+	  else{
+
+      $to = 'insurance@hondapang.com.ph, jmcasilang@hondapang.com.ph';
+	  }
+      $subject = 'Inquiry';
+      if (mail($to, $subject, $message_body)){
+          $success = "Thank You For Your Inquiry<br/>
+		  				<small>We have received your inquiry and will respond to you very soon.  For urgent inquiries please contact us </small><a href='contacts.html' style='color: red;' target='_parent'><b>HERE!</b></a>.";
+          $name = $email = $phone =  $message = '';
+      }
+  }
+  
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}

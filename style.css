@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+.navbar-default {
+	background-color: aqua;
+}
+
+@font-face {
+	font-family: myExo;
+	src: url(fonts/Exo-Regular.otf);
+}
+@font-face {
+	font-family: myExoBold;
+	src: url(fonts/Exo-Bold.otf);
+}
+
+body, a{
+	background-color:aquamarine;
+	font-family: myExo;
+}
+
+
+header {
+	font-size: 18px;
+}
+
+header p{
+	font-family: Century Gothic, Helvetica Neue, Helvetica, Arial," sans-serif";
+	color: #F80004;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover,
+header a:focus{
+	color: red;
+	text-decoration: none;
+}
+
+header img {
+	width: 25px;
+	padding-bottom: 5px;
+}
+
+
+
+ul {
+	list-style-type: none;
+}
+
+@font-face {
+	font-family: myExoBold;
+	src: url(fonts/Exo-Bold.otf);
+}
+
+/* contacts */
+body > .container h1, body > .container h3, body > .container h6 {
+	font-family: myExoBold;
+}
+
+body > .container p {
+	font-family: myExo;
+}
+
+
+
+.button {
+	background-color: white;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+	background-color: #6C6C6C;
+}
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+.banner-container {
+	position: relative;
+	animation-name: hcpacarousel;
+	animation-duration: 1s;
+}
+
+@keyframes hcpacarousel {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.unitinfo {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.space {
+	height: 30px;
+}
+
+/* unit features area */
+
+.gallery-img {
+	float: left;
+	 display: inline-block;
+    
+}
+
+.specs-content {
+	height: 310px;
+	overflow: scroll;	
+}
+
+/* srollbar style */
+/* Let's get this party started */
+.specs-content::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.specs-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.specs-content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.specs-content::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+
+/* SRVC PROMOS */
+.promo-menu {
+	float: left;
+    border: none;
+    width: 100%;
+}
+
+.promo-menu button {
+	display: block;
+    background-color: inherit;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+	font-family: myExoBold;
+	font-style: oblique;
+}
+
+.promo-menu button:hover, .promo-menu button:focus {
+	background-color: #DC4143;
+	color: #FFF;
+}
+
+.promo-menu button.active {
+	background-color: #DC4143;
+	color: #FFF;
+	font-size: 20px;
+}
+
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 100%;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.prmclose1, .prmclose2 {
+    color: #111111;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.prmclose1:hover, .prmclose1:focus,
+.prmclose2:hover, .prmclose2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {padding:0;}
+
+.modal-footer {
+    padding: 2px 2px;
+    background-color: #161616;
+    color: white;
+}
+
+/* back to top */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index: 20;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	z-index: 21;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.unit {
+	width: 1175px;
+	height: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+.colors > button {
+	background-color: transparent;
+	border-style: none;
+	width: 50px;
+}
+.container > .img-responsive {
+	margin: 0 auto;
+}
+
+.variant {
+    float: left;
+    padding: 2px 5px;
+    margin: 0 5px 5px 0;
+    background: #FFF;
+    border-radius: 2px;
+    letter-spacing: 0px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #555;
+	border: 0.5px #151515 solid;
+	position: relative;
+}
+
+.variant:hover {
+	color: #FFFFFF;
+	background-color: #1A1A1A;
+}
+
+.footer a:hover{
+	text-decoration: none;
+}
+
+

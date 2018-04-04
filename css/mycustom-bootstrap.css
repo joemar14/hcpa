@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+	nav 
+	{
+		z-index: 2;
+	}
+	body > .navbar-default {
+		background-color: #FFF;
+		border: none;
+	}
+	body > .navbar-default .navbar-nav > .active > a,
+	body > .navbar-default .navbar-nav > .active > a:hover,
+	body > .navbar-default .navbar-nav > .active > a:focus{
+		background-color: #4D4D4D;
+		color: #FFF;
+	}
+	body > .navbar-default .navbar-nav > li > a:hover{
+		background-color: #4D4D4D;
+		color: #FFF;
+	}
+	.navbar-default .navbar-nav .dropdown-menu > li > a:hover{
+		background-color: #4D4D4D;
+		color: #FFF;
+	}
+	.navbar-default .navbar-collapse .navbar-nav .dropdown-menu > li > a:hover{
+		background-color: #4D4D4D;
+		color: #FFF;
+	}
+	.dropdown:hover .dropdown-menu,
+	.dropdown:focus .dropdown-menu
+	{
+	display: block;
+	}
+	
+.navbar-default > .container > .navbar-header {
+	height:70px;margin-top: -8px;
+}
+
+
+
+	.container .nav-tabs {
+		text-align: center;
+	}
+
+	.container .nav-tabs > li{
+		float: none;
+		display: inline-block;
+	}
+	
+	
+	@font-face {
+		font-family: myExoBold;
+		src: url(../fonts/Exo-Bold.otf);
+	}
+	.container .nav-tabs > .active > a,
+	.container .nav-tabs > .active > a:hover,
+	.container .nav-tabs > .active > a:focus
+	{
+		background-color: #4D4D4D;
+		font-style: oblique;
+		color: #FFF;
+		font-family: myExoBold;
+	}
+	.container .nav-tabs > li > a:hover,
+	.container .nav-tabs > li > a:focus{
+		background-color: #4D4D4D;
+		color: #FFF;
+	}
+	.container .tab-content > .tab-pane > .unitdes > h1 {
+		font-family: myExoBold;
+	}
+	.container .tab-content > .tab-pane > .unitdes > p {
+		text-align: justify;
+	}
+	.container .tab-content > .active {
+		background-color: #FFF;
+	}
+	@font-face {
+		font-family: myCenturyGothic;
+		src:url(../fonts/GOTHIC.TTF);
+	}
+	.item .carousel-caption {
+		opacity: 0;
+		text-align: left;
+		margin-left: -50px;
+		margin-bottom: -30px;
+		font-family: myCenturyGothic;
+		color: #FFF;
+		width: 80%;
+	}
+
+@media all and (max-device-width: 720px){
+    .item .carousel-caption {
+        font-size: 3.5vw;
+    }
+}
+
+
+	.carousel-caption p, .carousel-caption h3 {
+		background-color: rgba(0,0,0,.80);
+		border-radius: 10px;
+		padding: 5px;
+	}
+	.carousel-inner:hover .carousel-caption {
+		opacity: 1;
+	}
+	.slide .carousel-control.left, .slide .carousel-control.right {
+    background-image: none;
+	}
+
